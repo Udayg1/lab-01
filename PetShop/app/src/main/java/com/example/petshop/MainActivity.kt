@@ -29,17 +29,6 @@ class MainActivity : ComponentActivity() {
         pettablePets.add(cat)
         pettablePets.add(dog)
 //        pettablePets.add(scorpion)
-        enableEdgeToEdge()
-        setContent {
-            PetShopTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "world",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
     }
 }
 
@@ -57,8 +46,4 @@ fun GreetingPreview() {
     PetShopTheme {
         Greeting("Android")
     }
-}
-
-interface Pettable{
-    fun pet()
 }
